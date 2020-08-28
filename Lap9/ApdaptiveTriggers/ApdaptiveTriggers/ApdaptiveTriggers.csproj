@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{4D8FE1E7-F150-4876-A23E-2E83B6F9A00E}</ProjectGuid>
+    <ProjectGuid>{E86320CA-845F-40C0-B6F4-C74C2898A7DB}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HamburgerHeavenChallenge</RootNamespace>
-    <AssemblyName>HamburgerHeavenChallenge</AssemblyName>
+    <RootNamespace>ApdaptiveTriggers</RootNamespace>
+    <AssemblyName>ApdaptiveTriggers</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -119,24 +119,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Financial.xaml.cs">
-      <DependentUpon>Financial.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Food.xaml.cs">
-      <DependentUpon>Food.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NavigationView\NavigationView.xaml.cs">
-      <DependentUpon>NavigationView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Financial.xaml.cs">
-      <DependentUpon>Financial.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Food.xaml.cs">
-      <DependentUpon>Food.xaml</DependentUpon>
+    <Compile Include="demo\VisualStateGroups.xaml.cs">
+      <DependentUpon>VisualStateGroups.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -145,8 +133,6 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Financial.png" />
-    <Content Include="Assets\Food.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -161,27 +147,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Financial.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Food.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="NavigationView\NavigationView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Financial.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Food.xaml">
+    <Page Include="demo\VisualStateGroups.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
